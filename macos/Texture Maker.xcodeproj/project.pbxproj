@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F190F23D252DE19C006DB96C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F23C252DE19C006DB96C /* AppDelegate.swift */; };
+		F190F23F252DE19C006DB96C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F23E252DE19C006DB96C /* ViewController.swift */; };
+		F190F241252DE19E006DB96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F190F240252DE19E006DB96C /* Assets.xcassets */; };
+		F190F244252DE19E006DB96C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F190F242252DE19E006DB96C /* Main.storyboard */; };
+		F190F250252DE19E006DB96C /* Texture_MakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F24F252DE19E006DB96C /* Texture_MakerTests.swift */; };
+		F190F25B252DE19E006DB96C /* Texture_MakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F25A252DE19E006DB96C /* Texture_MakerUITests.swift */; };
+		F190F27F252DE69E006DB96C /* libtexturelib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F190F27E252DE69E006DB96C /* libtexturelib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F190F24C252DE19E006DB96C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F190F231252DE19C006DB96C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F190F238252DE19C006DB96C;
+			remoteInfo = "Texture Maker";
+		};
+		F190F257252DE19E006DB96C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F190F231252DE19C006DB96C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F190F238252DE19C006DB96C;
+			remoteInfo = "Texture Maker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F190F239252DE19C006DB96C /* Texture Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Texture Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F190F23C252DE19C006DB96C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F190F23E252DE19C006DB96C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F190F240252DE19E006DB96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F190F243252DE19E006DB96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F190F245252DE19E006DB96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F190F246252DE19E006DB96C /* Texture_Maker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Texture_Maker.entitlements; sourceTree = "<group>"; };
+		F190F24B252DE19E006DB96C /* Texture MakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Texture MakerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F190F24F252DE19E006DB96C /* Texture_MakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture_MakerTests.swift; sourceTree = "<group>"; };
+		F190F251252DE19E006DB96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F190F256252DE19E006DB96C /* Texture MakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Texture MakerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F190F25A252DE19E006DB96C /* Texture_MakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture_MakerUITests.swift; sourceTree = "<group>"; };
+		F190F25C252DE19E006DB96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F190F274252DE3F2006DB96C /* texturelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texturelib.h; sourceTree = "<group>"; };
+		F190F27E252DE69E006DB96C /* libtexturelib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtexturelib.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F190F236252DE19C006DB96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F190F27F252DE69E006DB96C /* libtexturelib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F190F248252DE19E006DB96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F190F253252DE19E006DB96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F190F230252DE19C006DB96C = {
+			isa = PBXGroup;
+			children = (
+				F190F273252DE2DB006DB96C /* include */,
+				F190F272252DE2DB006DB96C /* libs */,
+				F190F23B252DE19C006DB96C /* Texture Maker */,
+				F190F24E252DE19E006DB96C /* Texture MakerTests */,
+				F190F259252DE19E006DB96C /* Texture MakerUITests */,
+				F190F23A252DE19C006DB96C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F190F23A252DE19C006DB96C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F190F239252DE19C006DB96C /* Texture Maker.app */,
+				F190F24B252DE19E006DB96C /* Texture MakerTests.xctest */,
+				F190F256252DE19E006DB96C /* Texture MakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F190F23B252DE19C006DB96C /* Texture Maker */ = {
+			isa = PBXGroup;
+			children = (
+				F190F23C252DE19C006DB96C /* AppDelegate.swift */,
+				F190F23E252DE19C006DB96C /* ViewController.swift */,
+				F190F240252DE19E006DB96C /* Assets.xcassets */,
+				F190F242252DE19E006DB96C /* Main.storyboard */,
+				F190F245252DE19E006DB96C /* Info.plist */,
+				F190F246252DE19E006DB96C /* Texture_Maker.entitlements */,
+			);
+			path = "Texture Maker";
+			sourceTree = "<group>";
+		};
+		F190F24E252DE19E006DB96C /* Texture MakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F190F24F252DE19E006DB96C /* Texture_MakerTests.swift */,
+				F190F251252DE19E006DB96C /* Info.plist */,
+			);
+			path = "Texture MakerTests";
+			sourceTree = "<group>";
+		};
+		F190F259252DE19E006DB96C /* Texture MakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F190F25A252DE19E006DB96C /* Texture_MakerUITests.swift */,
+				F190F25C252DE19E006DB96C /* Info.plist */,
+			);
+			path = "Texture MakerUITests";
+			sourceTree = "<group>";
+		};
+		F190F272252DE2DB006DB96C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F190F27E252DE69E006DB96C /* libtexturelib.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		F190F273252DE2DB006DB96C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F190F274252DE3F2006DB96C /* texturelib.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F190F238252DE19C006DB96C /* Texture Maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F190F25F252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture Maker" */;
+			buildPhases = (
+				F190F26E252DE26B006DB96C /* Build rust lib */,
+				F190F235252DE19C006DB96C /* Sources */,
+				F190F236252DE19C006DB96C /* Frameworks */,
+				F190F237252DE19C006DB96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Texture Maker";
+			productName = "Texture Maker";
+			productReference = F190F239252DE19C006DB96C /* Texture Maker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F190F24A252DE19E006DB96C /* Texture MakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F190F262252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture MakerTests" */;
+			buildPhases = (
+				F190F247252DE19E006DB96C /* Sources */,
+				F190F248252DE19E006DB96C /* Frameworks */,
+				F190F249252DE19E006DB96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F190F24D252DE19E006DB96C /* PBXTargetDependency */,
+			);
+			name = "Texture MakerTests";
+			productName = "Texture MakerTests";
+			productReference = F190F24B252DE19E006DB96C /* Texture MakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F190F255252DE19E006DB96C /* Texture MakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F190F265252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture MakerUITests" */;
+			buildPhases = (
+				F190F252252DE19E006DB96C /* Sources */,
+				F190F253252DE19E006DB96C /* Frameworks */,
+				F190F254252DE19E006DB96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F190F258252DE19E006DB96C /* PBXTargetDependency */,
+			);
+			name = "Texture MakerUITests";
+			productName = "Texture MakerUITests";
+			productReference = F190F256252DE19E006DB96C /* Texture MakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F190F231252DE19C006DB96C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F190F238252DE19C006DB96C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					F190F24A252DE19E006DB96C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F190F238252DE19C006DB96C;
+					};
+					F190F255252DE19E006DB96C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F190F238252DE19C006DB96C;
+					};
+				};
+			};
+			buildConfigurationList = F190F234252DE19C006DB96C /* Build configuration list for PBXProject "Texture Maker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F190F230252DE19C006DB96C;
+			productRefGroup = F190F23A252DE19C006DB96C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F190F238252DE19C006DB96C /* Texture Maker */,
+				F190F24A252DE19E006DB96C /* Texture MakerTests */,
+				F190F255252DE19E006DB96C /* Texture MakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F190F237252DE19C006DB96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F190F241252DE19E006DB96C /* Assets.xcassets in Resources */,
+				F190F244252DE19E006DB96C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F190F249252DE19E006DB96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F190F254252DE19E006DB96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F190F26E252DE26B006DB96C /* Build rust lib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build rust lib";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e\n\n# Location of rust project\nRUST_PROJ=\"/Users/linkov/Documents/sdwr/texture-maker/texturelib\"\n# Location of the iOS project\nIOS_PROJ=\"$PROJECT_DIR\"\n# Provide access to Rust utilities\nPATH=\"$PATH:/Users/linkov/.cargo/bin\"\n\ncd \"$RUST_PROJ\"\n# Generate C bindings\ncbindgen -l C -o target/texturelib.h\n# Build for iOS architectures\ncargo lipo --release --targets x86_64-apple-darwin\n# Copy resources to the iOS folder, overwriting old ones\ncp texturelib.h \"$IOS_PROJ/include\"\ncp target/universal/release/libtexturelib.a \"$IOS_PROJ/libs\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F190F235252DE19C006DB96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F190F23F252DE19C006DB96C /* ViewController.swift in Sources */,
+				F190F23D252DE19C006DB96C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F190F247252DE19E006DB96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F190F250252DE19E006DB96C /* Texture_MakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F190F252252DE19E006DB96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F190F25B252DE19E006DB96C /* Texture_MakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F190F24D252DE19E006DB96C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F190F238252DE19C006DB96C /* Texture Maker */;
+			targetProxy = F190F24C252DE19E006DB96C /* PBXContainerItemProxy */;
+		};
+		F190F258252DE19E006DB96C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F190F238252DE19C006DB96C /* Texture Maker */;
+			targetProxy = F190F257252DE19E006DB96C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F190F242252DE19E006DB96C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F190F243252DE19E006DB96C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F190F25D252DE19E006DB96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F190F25E252DE19E006DB96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F190F260252DE19E006DB96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Texture Maker/Texture_Maker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 43R88X5B35;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/linkov/Documents/sdwr/texture-maker/macos/include";
+				INFOPLIST_FILE = "Texture Maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/linkov/Documents/sdwr/RUST-IOS-TEMPLATE/hello-rust/libs",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-Maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linkov/Documents/sdwr/texture-maker/macos/include/texturelib.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F190F261252DE19E006DB96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Texture Maker/Texture_Maker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 43R88X5B35;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/linkov/Documents/sdwr/texture-maker/macos/include";
+				INFOPLIST_FILE = "Texture Maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/linkov/Documents/sdwr/RUST-IOS-TEMPLATE/hello-rust/libs",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-Maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linkov/Documents/sdwr/texture-maker/macos/include/texturelib.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F190F263252DE19E006DB96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 43R88X5B35;
+				INFOPLIST_FILE = "Texture MakerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-MakerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Texture Maker.app/Contents/MacOS/Texture Maker";
+			};
+			name = Debug;
+		};
+		F190F264252DE19E006DB96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 43R88X5B35;
+				INFOPLIST_FILE = "Texture MakerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-MakerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Texture Maker.app/Contents/MacOS/Texture Maker";
+			};
+			name = Release;
+		};
+		F190F266252DE19E006DB96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 43R88X5B35;
+				INFOPLIST_FILE = "Texture MakerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-MakerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Texture Maker";
+			};
+			name = Debug;
+		};
+		F190F267252DE19E006DB96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 43R88X5B35;
+				INFOPLIST_FILE = "Texture MakerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-MakerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Texture Maker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F190F234252DE19C006DB96C /* Build configuration list for PBXProject "Texture Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F190F25D252DE19E006DB96C /* Debug */,
+				F190F25E252DE19E006DB96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F190F25F252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F190F260252DE19E006DB96C /* Debug */,
+				F190F261252DE19E006DB96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F190F262252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture MakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F190F263252DE19E006DB96C /* Debug */,
+				F190F264252DE19E006DB96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F190F265252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture MakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F190F266252DE19E006DB96C /* Debug */,
+				F190F267252DE19E006DB96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F190F231252DE19C006DB96C /* Project object */;
+}

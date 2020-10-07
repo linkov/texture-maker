@@ -1,0 +1,10 @@
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/texture_synthesis-c5f51668204e51e4.rmeta: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/errors.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/img_pyramid.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/utils.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/ms.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/unsync.rs
+
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/texture_synthesis-c5f51668204e51e4.d: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/errors.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/img_pyramid.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/utils.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/ms.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/unsync.rs
+
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/lib.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/errors.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/img_pyramid.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/utils.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/ms.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/texture-synthesis-0.8.0/src/unsync.rs:

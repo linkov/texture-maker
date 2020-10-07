@@ -1,0 +1,1 @@
+{"rustc":13783575115907918084,"features":"[\"alloc\", \"default\", \"std\"]","target":4209005249596278296,"profile":4339006351771724982,"path":8030764247020775683,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"x86_64-apple-darwin/release/.fingerprint/futures-core-899abc837f1a29b3/dep-lib-futures-core"}}],"rustflags":[],"metadata":17081064135023534619,"config":0}

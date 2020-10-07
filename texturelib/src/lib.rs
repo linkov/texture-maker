@@ -6,7 +6,7 @@ use core_foundation::{
     string::{CFString, CFStringRef},
 };
 use std::convert::TryInto;
-
+use async_std::task;
 use log::*;
 use mpsc::Receiver;
 use std::{
@@ -19,7 +19,7 @@ use texture_synthesis as ts;
 
 //MARK: Incoming params
 #[no_mangle]
-pub extern fn begin_with_filepath(filepath: *const c_char, size: c_int ) -> *mut c_char {
+pub extern fn begin_with_filepath(filepath: *const c_char, size: c_int, out_size: c_int ) -> () {
 
    
     let c_str = unsafe { CStr::from_ptr(filepath) };
@@ -27,8 +27,12 @@ pub extern fn begin_with_filepath(filepath: *const c_char, size: c_int ) -> *mut
         Err(_) => "there",
         Ok(string) => string,
     };
-    begin_transform(recipient.to_string(),size);
-    CString::new("Hell ".to_owned() + recipient).unwrap().into_raw()
+        
+    begin_transform(recipient.to_string(),size, out_size);
+
+    
+
+    
 }
 
 #[no_mangle]
@@ -107,42 +111,87 @@ impl MyCallback for unsafe extern "C" fn(CFStringRef) {
 
 
 //MARK: Transform
-fn begin_transform(url_string: String, size: c_int) {
 
-  
-    let result = run_transform(url_string.to_string(), size);
+fn begin_transform(url_string: String, size: c_int, out_size: c_int) -> () {
 
-    if result.is_ok() {
-       unsafe {
-        send_to_callback("Hello callback YES!".to_owned());
-       } 
-    }  else  {
 
-        unsafe {
+    task::spawn(async  move  {
 
-            send_to_callback("Hello callback NO!".to_owned());
+       let res = run_transform(url_string.to_string(), size, out_size).await;
+        if res.is_ok() {
+            unsafe {
+                send_to_callback("success".to_owned());
+               } 
+        } else {
+            unsafe {
+     
+                send_to_callback("fail".to_owned());
+            }
         }
+     });
+   // let res =  task::block_on(run_transform(url_string.to_string(), size, out_size));
+
+
+    // let key_owned = "success".to_owned();
+    // let f = async {
+    //     let _ =  run_transform(url_string.to_string(), size, out_size).await;
+      
+    //     unsafe {
+    //         send_to_callback(key_owned);
+    //     }
         
-    }
+    // };
+
+    
+    
+
+    // async  {
+
+    //     let res =  run_transform(url_string.to_string(), size, out_size).await;
+
+    // };
+   
+
+    // if ress  {
+    //     unsafe {
+    //      send_to_callback("success".to_owned());
+    //     } 
+    //  }  else  {
+ 
+    //      unsafe {
+ 
+    //          send_to_callback("fail".to_owned());
+    //      }
+         
+    //  }
+    
+    //future::ok("Hello world".to_string())
+
+
 
 }
 
-fn run_transform(url_string: String, size: c_int ) -> Result<(), ts::Error> {
+async fn run_transform(url_string: String, size: c_int, out_size: c_int ) -> Result<(), ts::Error> {
 
-    let result: Result<u32, std::num::TryFromIntError> = size.try_into();
+    let tile_size: Result<u32, std::num::TryFromIntError> = size.try_into();
+    let out_size: Result<u32, std::num::TryFromIntError> = out_size.try_into();
 
     //create a new session
     let texsynth = ts::Session::builder()
         //load a single example image
+        .resize_input(ts::Dims {
+            width: tile_size.unwrap(),
+            height: tile_size.unwrap(),
+        })
         .add_example(&url_string)
-        .output_size(ts::Dims::square(result.unwrap()))
+        .output_size(ts::Dims::square( out_size.unwrap() ))
         .build()?;
 
     //generate an image
     let generated = texsynth.run(None);
 
     //save the image to the disk
-    generated.save("01.jpg")
+    generated.save("result.jpg")
 
 }
 

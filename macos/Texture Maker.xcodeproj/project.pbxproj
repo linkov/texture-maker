@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E27712DBCB98BD97E553D35 /* Pods_Texture_MakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E9CD7E6DB73F70FBE41AD /* Pods_Texture_MakerTests.framework */; };
+		6B04BABB7FB710970610E01D /* Pods_Texture_Maker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACA71D03B8A9C4767BDEC85 /* Pods_Texture_Maker.framework */; };
+		6DEBBD6B063F85F179A052F1 /* Pods_Texture_MakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 336D9134E0FAEC9A2EFE63EE /* Pods_Texture_MakerUITests.framework */; };
 		F190F23D252DE19C006DB96C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F23C252DE19C006DB96C /* AppDelegate.swift */; };
 		F190F23F252DE19C006DB96C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F23E252DE19C006DB96C /* ViewController.swift */; };
 		F190F241252DE19E006DB96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F190F240252DE19E006DB96C /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 		F190F250252DE19E006DB96C /* Texture_MakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F24F252DE19E006DB96C /* Texture_MakerTests.swift */; };
 		F190F25B252DE19E006DB96C /* Texture_MakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F25A252DE19E006DB96C /* Texture_MakerUITests.swift */; };
 		F190F27F252DE69E006DB96C /* libtexturelib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F190F27E252DE69E006DB96C /* libtexturelib.a */; };
+		F190F285252E2253006DB96C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F284252E2253006DB96C /* LineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24E7F5C193B4873C7E54C1E3 /* Pods-Texture MakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture MakerTests.debug.xcconfig"; path = "Target Support Files/Pods-Texture MakerTests/Pods-Texture MakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B9E9CD7E6DB73F70FBE41AD /* Pods_Texture_MakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texture_MakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		336D9134E0FAEC9A2EFE63EE /* Pods_Texture_MakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texture_MakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38992BA077E147E654861F0B /* Pods-Texture Maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture Maker.debug.xcconfig"; path = "Target Support Files/Pods-Texture Maker/Pods-Texture Maker.debug.xcconfig"; sourceTree = "<group>"; };
+		3D0EABE34E6CA972636C0041 /* Pods-Texture MakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture MakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Texture MakerUITests/Pods-Texture MakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C7B8A638CD7A3E0CEDC3E4A /* Pods-Texture MakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture MakerTests.release.xcconfig"; path = "Target Support Files/Pods-Texture MakerTests/Pods-Texture MakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6929007B0E79E0BD90C9F4B3 /* Pods-Texture MakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture MakerUITests.release.xcconfig"; path = "Target Support Files/Pods-Texture MakerUITests/Pods-Texture MakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9ACA71D03B8A9C4767BDEC85 /* Pods_Texture_Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texture_Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81B369B4AAA20DA7AC98FD9 /* Pods-Texture Maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture Maker.release.xcconfig"; path = "Target Support Files/Pods-Texture Maker/Pods-Texture Maker.release.xcconfig"; sourceTree = "<group>"; };
 		F190F239252DE19C006DB96C /* Texture Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Texture Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F190F23C252DE19C006DB96C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F190F23E252DE19C006DB96C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,7 @@
 		F190F25C252DE19E006DB96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F190F274252DE3F2006DB96C /* texturelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texturelib.h; sourceTree = "<group>"; };
 		F190F27E252DE69E006DB96C /* libtexturelib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtexturelib.a; sourceTree = "<group>"; };
+		F190F284252E2253006DB96C /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F190F27F252DE69E006DB96C /* libtexturelib.a in Frameworks */,
+				6B04BABB7FB710970610E01D /* Pods_Texture_Maker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E27712DBCB98BD97E553D35 /* Pods_Texture_MakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +87,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEBBD6B063F85F179A052F1 /* Pods_Texture_MakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553E58B40B7C8C7930926A48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38992BA077E147E654861F0B /* Pods-Texture Maker.debug.xcconfig */,
+				A81B369B4AAA20DA7AC98FD9 /* Pods-Texture Maker.release.xcconfig */,
+				24E7F5C193B4873C7E54C1E3 /* Pods-Texture MakerTests.debug.xcconfig */,
+				4C7B8A638CD7A3E0CEDC3E4A /* Pods-Texture MakerTests.release.xcconfig */,
+				3D0EABE34E6CA972636C0041 /* Pods-Texture MakerUITests.debug.xcconfig */,
+				6929007B0E79E0BD90C9F4B3 /* Pods-Texture MakerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0CE4615577495CB08E4D68B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ACA71D03B8A9C4767BDEC85 /* Pods_Texture_Maker.framework */,
+				2B9E9CD7E6DB73F70FBE41AD /* Pods_Texture_MakerTests.framework */,
+				336D9134E0FAEC9A2EFE63EE /* Pods_Texture_MakerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F190F230252DE19C006DB96C = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +127,8 @@
 				F190F24E252DE19E006DB96C /* Texture MakerTests */,
 				F190F259252DE19E006DB96C /* Texture MakerUITests */,
 				F190F23A252DE19C006DB96C /* Products */,
+				553E58B40B7C8C7930926A48 /* Pods */,
+				F0CE4615577495CB08E4D68B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +145,7 @@
 		F190F23B252DE19C006DB96C /* Texture Maker */ = {
 			isa = PBXGroup;
 			children = (
+				F190F284252E2253006DB96C /* LineView.swift */,
 				F190F23C252DE19C006DB96C /* AppDelegate.swift */,
 				F190F23E252DE19C006DB96C /* ViewController.swift */,
 				F190F240252DE19E006DB96C /* Assets.xcassets */,
@@ -153,10 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F190F25F252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture Maker" */;
 			buildPhases = (
+				E4B41BE4591A99A30ABCE318 /* [CP] Check Pods Manifest.lock */,
 				F190F26E252DE26B006DB96C /* Build rust lib */,
 				F190F235252DE19C006DB96C /* Sources */,
 				F190F236252DE19C006DB96C /* Frameworks */,
 				F190F237252DE19C006DB96C /* Resources */,
+				892FDE690B2ECAE844AA52C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F190F262252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture MakerTests" */;
 			buildPhases = (
+				34C96E49ABD70FFC9F67C2A3 /* [CP] Check Pods Manifest.lock */,
 				F190F247252DE19E006DB96C /* Sources */,
 				F190F248252DE19E006DB96C /* Frameworks */,
 				F190F249252DE19E006DB96C /* Resources */,
@@ -189,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F190F265252DE19E006DB96C /* Build configuration list for PBXNativeTarget "Texture MakerUITests" */;
 			buildPhases = (
+				266919FB1F1C85246A591357 /* [CP] Check Pods Manifest.lock */,
 				F190F252252DE19E006DB96C /* Sources */,
 				F190F253252DE19E006DB96C /* Frameworks */,
 				F190F254252DE19E006DB96C /* Resources */,
@@ -272,6 +320,89 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		266919FB1F1C85246A591357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Texture MakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34C96E49ABD70FFC9F67C2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Texture MakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		892FDE690B2ECAE844AA52C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Texture Maker/Pods-Texture Maker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Texture Maker/Pods-Texture Maker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Texture Maker/Pods-Texture Maker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B41BE4591A99A30ABCE318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Texture Maker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F190F26E252DE26B006DB96C /* Build rust lib */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +430,7 @@
 			files = (
 				F190F23F252DE19C006DB96C /* ViewController.swift in Sources */,
 				F190F23D252DE19C006DB96C /* AppDelegate.swift in Sources */,
+				F190F285252E2253006DB96C /* LineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +594,7 @@
 		};
 		F190F260252DE19E006DB96C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38992BA077E147E654861F0B /* Pods-Texture Maker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +622,7 @@
 		};
 		F190F261252DE19E006DB96C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81B369B4AAA20DA7AC98FD9 /* Pods-Texture Maker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,6 +650,7 @@
 		};
 		F190F263252DE19E006DB96C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E7F5C193B4873C7E54C1E3 /* Pods-Texture MakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +673,7 @@
 		};
 		F190F264252DE19E006DB96C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7B8A638CD7A3E0CEDC3E4A /* Pods-Texture MakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +696,7 @@
 		};
 		F190F266252DE19E006DB96C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0EABE34E6CA972636C0041 /* Pods-Texture MakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -580,6 +717,7 @@
 		};
 		F190F267252DE19E006DB96C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6929007B0E79E0BD90C9F4B3 /* Pods-Texture MakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

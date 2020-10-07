@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015DC64512C1BC84D74447B8A3726EBC /* SYFlatButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FA310883766DCB5A07A791311F123851 /* SYFlatButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CC767F691EBBCAE3115B9C8393BBA90 /* SYFlatButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB42C2A4434BC736E2A5CFDFDE525A1 /* SYFlatButton-dummy.m */; };
+		2967B16759856B81DA1F311F4FC80010 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		504B89087A708006F521878EC3F7D70F /* Pods-Texture MakerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 049FB5FFE305B20FC0D6E57D530F5E81 /* Pods-Texture MakerTests-dummy.m */; };
+		68472AB31AF0C4602C0D1BF72E2A12D1 /* Pods-Texture Maker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C1D768F98C93CEE00258C6B25DF46E /* Pods-Texture Maker-dummy.m */; };
+		695AF63F996F9170B7F029AB666B0DD3 /* Pods-Texture MakerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF0F951E5EAE94E2F358761F883426F /* Pods-Texture MakerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A11584E16CB66F626BC210B02D0B316 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		967BA41B609EEE6070F272A434591C20 /* SYFlatButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9302CF648167D908C407CD9ABF565D77 /* SYFlatButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE199A3B185B90F95FEF9BAE6B6EAF6B /* Pods-Texture MakerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9E757CADA6AC4777DC8806610B228 /* Pods-Texture MakerUITests-dummy.m */; };
+		BF462016405B088AE552049F3934C3D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		CC4F06DDF3F2023B3D7FE4C50599D787 /* Pods-Texture Maker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7B20284E9C3F2A080169F6D793C6CA /* Pods-Texture Maker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8E912A5227F749FFE6AEE235DEDC6D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		EEF6250493A9B000EB8D5246B0ED7A46 /* SYFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8473D9F4AEA19AC2F5DAA725ADCF6BA /* SYFlatButton.m */; };
+		F76BA6E85CD41952C9E677EDF341F05F /* Pods-Texture MakerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA732CF052976FBAFC3A7ACA783B813 /* Pods-Texture MakerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03B59A1B9DED8D1CD7BE902FCCFCA584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60F5A75B3FA27AF518F9EF5EE05BE201;
+			remoteInfo = "Pods-Texture Maker";
+		};
+		DC676C61C1F3AD16BE4540E9907692D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01DC88D154043E2F41A960472178A6E3;
+			remoteInfo = SYFlatButton;
+		};
+		E398CC3923E7DCEEF87AA5D23B255E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60F5A75B3FA27AF518F9EF5EE05BE201;
+			remoteInfo = "Pods-Texture Maker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049FB5FFE305B20FC0D6E57D530F5E81 /* Pods-Texture MakerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Texture MakerTests-dummy.m"; sourceTree = "<group>"; };
+		0B25C9A7D8DF44AE864B08285B842BFF /* Pods-Texture Maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Texture Maker.release.xcconfig"; sourceTree = "<group>"; };
+		122B4374CA649B8AD5B046EED9ADFF6C /* Pods-Texture MakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Texture MakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		123DF5BCD7FDCD6A7CC006FF3C152486 /* Pods-Texture Maker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Texture Maker-acknowledgements.plist"; sourceTree = "<group>"; };
+		13E9E757CADA6AC4777DC8806610B228 /* Pods-Texture MakerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Texture MakerUITests-dummy.m"; sourceTree = "<group>"; };
+		15598E10EC61C5F4E646D529FC8B138C /* Pods-Texture Maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Texture Maker.debug.xcconfig"; sourceTree = "<group>"; };
+		1F4615F09ED9259715FBEABFCA8E7BDC /* SYFlatButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYFlatButton.xcconfig; sourceTree = "<group>"; };
+		23EB8728024CC178AC4ADB2652CCC01A /* Pods_Texture_MakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Texture_MakerUITests.framework; path = "Pods-Texture MakerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD148A82C8576D9C870F745E141A45D /* Pods-Texture Maker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Texture Maker-frameworks.sh"; sourceTree = "<group>"; };
+		2F7B20284E9C3F2A080169F6D793C6CA /* Pods-Texture Maker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Texture Maker-umbrella.h"; sourceTree = "<group>"; };
+		314507736DC057AD7D0CB985FC11D6D0 /* Pods-Texture MakerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Texture MakerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		361809E4EB8889900D82B2F0979F254A /* Pods-Texture Maker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Texture Maker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46D2726C024315DD05DC237F76A4461D /* Pods-Texture MakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Texture MakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B48939B19AE8055567290F987E8A86C /* Pods-Texture MakerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Texture MakerTests-Info.plist"; sourceTree = "<group>"; };
+		5DAB73F7F0BCD78E20D5D5F65F893501 /* Pods-Texture MakerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Texture MakerUITests.modulemap"; sourceTree = "<group>"; };
+		69C1D768F98C93CEE00258C6B25DF46E /* Pods-Texture Maker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Texture Maker-dummy.m"; sourceTree = "<group>"; };
+		7583147FA16042764E2928E703800FAB /* SYFlatButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SYFlatButton.modulemap; sourceTree = "<group>"; };
+		7C2CBD3664521B9B0834CBC6C8829AAA /* Pods-Texture MakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Texture MakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		92C03B3B60AD21AD91B89041997035B0 /* Pods_Texture_MakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Texture_MakerTests.framework; path = "Pods-Texture MakerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9302CF648167D908C407CD9ABF565D77 /* SYFlatButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYFlatButton-umbrella.h"; sourceTree = "<group>"; };
+		9CF0F951E5EAE94E2F358761F883426F /* Pods-Texture MakerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Texture MakerTests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A815CF5BC9AD2D0F85A497D6B5310691 /* Pods-Texture MakerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Texture MakerTests.modulemap"; sourceTree = "<group>"; };
+		ACA732CF052976FBAFC3A7ACA783B813 /* Pods-Texture MakerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Texture MakerUITests-umbrella.h"; sourceTree = "<group>"; };
+		BB7C2399B993A726601C7EED5F2AB7A3 /* Pods-Texture Maker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Texture Maker.modulemap"; sourceTree = "<group>"; };
+		BE65C4164A0C107F57223FDD7F63FD27 /* SYFlatButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SYFlatButton-Info.plist"; sourceTree = "<group>"; };
+		C9BFC70C77B772D246F2A008C3ED4FB3 /* Pods-Texture MakerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Texture MakerUITests-Info.plist"; sourceTree = "<group>"; };
+		CD98CBA7022E33D8BDFBFF963F757E5B /* Pods_Texture_Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Texture_Maker.framework; path = "Pods-Texture Maker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D187D5052A48E1C5E3FED14B75EC9BEA /* Pods-Texture Maker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Texture Maker-Info.plist"; sourceTree = "<group>"; };
+		D8473D9F4AEA19AC2F5DAA725ADCF6BA /* SYFlatButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SYFlatButton.m; path = SYFlatButton/SYFlatButton/SYFlatButton.m; sourceTree = "<group>"; };
+		DC6A8287ADCDF1A09020106078981E1D /* SYFlatButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYFlatButton-prefix.pch"; sourceTree = "<group>"; };
+		DDF19EB379969F26F815FBFD54B59EEE /* Pods-Texture MakerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Texture MakerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DEB42C2A4434BC736E2A5CFDFDE525A1 /* SYFlatButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYFlatButton-dummy.m"; sourceTree = "<group>"; };
+		E7689EA80CCE7CEEF47FE459F9B313EF /* Pods-Texture MakerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Texture MakerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E81BD7D7125458CE58AB7D59A64B877F /* SYFlatButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SYFlatButton.framework; path = SYFlatButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12F95099C9C9BF0A231F21392509563 /* Pods-Texture MakerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Texture MakerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F965B4DC6E79DEB00A58F2C5FF87E6E8 /* Pods-Texture MakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Texture MakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA310883766DCB5A07A791311F123851 /* SYFlatButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SYFlatButton.h; path = SYFlatButton/SYFlatButton/SYFlatButton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C12FD854AAEC5C83E3E9F1AA0686932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF462016405B088AE552049F3934C3D5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72D0FBA174279FD6DCD0AF0AC68F732D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2967B16759856B81DA1F311F4FC80010 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ADA917591AAB7539124CC7CE36E972D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E912A5227F749FFE6AEE235DEDC6D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FBFD038F959A7A93CC2A827B1A9D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A11584E16CB66F626BC210B02D0B316 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		156C7403917CD806D1EE931B179861BC /* SYFlatButton */ = {
+			isa = PBXGroup;
+			children = (
+				FA310883766DCB5A07A791311F123851 /* SYFlatButton.h */,
+				D8473D9F4AEA19AC2F5DAA725ADCF6BA /* SYFlatButton.m */,
+				888735241A2AF12ECE762A4640CCA93A /* Support Files */,
+			);
+			name = SYFlatButton;
+			path = SYFlatButton;
+			sourceTree = "<group>";
+		};
+		4E1E37798A67547F2BB082DFFBD8183B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9CFBADE3777E05256F2FD3E36131299 /* Pods-Texture Maker */,
+				5CA1C2A9C71EB595D848A8B43DFE54C6 /* Pods-Texture MakerTests */,
+				8F3F8334977BBD722A2723A90240800D /* Pods-Texture MakerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5CA1C2A9C71EB595D848A8B43DFE54C6 /* Pods-Texture MakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A815CF5BC9AD2D0F85A497D6B5310691 /* Pods-Texture MakerTests.modulemap */,
+				E7689EA80CCE7CEEF47FE459F9B313EF /* Pods-Texture MakerTests-acknowledgements.markdown */,
+				DDF19EB379969F26F815FBFD54B59EEE /* Pods-Texture MakerTests-acknowledgements.plist */,
+				049FB5FFE305B20FC0D6E57D530F5E81 /* Pods-Texture MakerTests-dummy.m */,
+				5B48939B19AE8055567290F987E8A86C /* Pods-Texture MakerTests-Info.plist */,
+				9CF0F951E5EAE94E2F358761F883426F /* Pods-Texture MakerTests-umbrella.h */,
+				F965B4DC6E79DEB00A58F2C5FF87E6E8 /* Pods-Texture MakerTests.debug.xcconfig */,
+				7C2CBD3664521B9B0834CBC6C8829AAA /* Pods-Texture MakerTests.release.xcconfig */,
+			);
+			name = "Pods-Texture MakerTests";
+			path = "Target Support Files/Pods-Texture MakerTests";
+			sourceTree = "<group>";
+		};
+		888735241A2AF12ECE762A4640CCA93A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7583147FA16042764E2928E703800FAB /* SYFlatButton.modulemap */,
+				1F4615F09ED9259715FBEABFCA8E7BDC /* SYFlatButton.xcconfig */,
+				DEB42C2A4434BC736E2A5CFDFDE525A1 /* SYFlatButton-dummy.m */,
+				BE65C4164A0C107F57223FDD7F63FD27 /* SYFlatButton-Info.plist */,
+				DC6A8287ADCDF1A09020106078981E1D /* SYFlatButton-prefix.pch */,
+				9302CF648167D908C407CD9ABF565D77 /* SYFlatButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SYFlatButton";
+			sourceTree = "<group>";
+		};
+		8F3F8334977BBD722A2723A90240800D /* Pods-Texture MakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DAB73F7F0BCD78E20D5D5F65F893501 /* Pods-Texture MakerUITests.modulemap */,
+				314507736DC057AD7D0CB985FC11D6D0 /* Pods-Texture MakerUITests-acknowledgements.markdown */,
+				F12F95099C9C9BF0A231F21392509563 /* Pods-Texture MakerUITests-acknowledgements.plist */,
+				13E9E757CADA6AC4777DC8806610B228 /* Pods-Texture MakerUITests-dummy.m */,
+				C9BFC70C77B772D246F2A008C3ED4FB3 /* Pods-Texture MakerUITests-Info.plist */,
+				ACA732CF052976FBAFC3A7ACA783B813 /* Pods-Texture MakerUITests-umbrella.h */,
+				46D2726C024315DD05DC237F76A4461D /* Pods-Texture MakerUITests.debug.xcconfig */,
+				122B4374CA649B8AD5B046EED9ADFF6C /* Pods-Texture MakerUITests.release.xcconfig */,
+			);
+			name = "Pods-Texture MakerUITests";
+			path = "Target Support Files/Pods-Texture MakerUITests";
+			sourceTree = "<group>";
+		};
+		B987E4A7BA5F9CEC0909ACF9BB242975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD98CBA7022E33D8BDFBFF963F757E5B /* Pods_Texture_Maker.framework */,
+				92C03B3B60AD21AD91B89041997035B0 /* Pods_Texture_MakerTests.framework */,
+				23EB8728024CC178AC4ADB2652CCC01A /* Pods_Texture_MakerUITests.framework */,
+				E81BD7D7125458CE58AB7D59A64B877F /* SYFlatButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9447294686DC6CA51E884133BE195D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				156C7403917CD806D1EE931B179861BC /* SYFlatButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBD43E0947D94E318A0ED1350CFF29ED /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				C9447294686DC6CA51E884133BE195D8 /* Pods */,
+				B987E4A7BA5F9CEC0909ACF9BB242975 /* Products */,
+				4E1E37798A67547F2BB082DFFBD8183B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D9CFBADE3777E05256F2FD3E36131299 /* Pods-Texture Maker */ = {
+			isa = PBXGroup;
+			children = (
+				BB7C2399B993A726601C7EED5F2AB7A3 /* Pods-Texture Maker.modulemap */,
+				361809E4EB8889900D82B2F0979F254A /* Pods-Texture Maker-acknowledgements.markdown */,
+				123DF5BCD7FDCD6A7CC006FF3C152486 /* Pods-Texture Maker-acknowledgements.plist */,
+				69C1D768F98C93CEE00258C6B25DF46E /* Pods-Texture Maker-dummy.m */,
+				2BD148A82C8576D9C870F745E141A45D /* Pods-Texture Maker-frameworks.sh */,
+				D187D5052A48E1C5E3FED14B75EC9BEA /* Pods-Texture Maker-Info.plist */,
+				2F7B20284E9C3F2A080169F6D793C6CA /* Pods-Texture Maker-umbrella.h */,
+				15598E10EC61C5F4E646D529FC8B138C /* Pods-Texture Maker.debug.xcconfig */,
+				0B25C9A7D8DF44AE864B08285B842BFF /* Pods-Texture Maker.release.xcconfig */,
+			);
+			name = "Pods-Texture Maker";
+			path = "Target Support Files/Pods-Texture Maker";
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD43E0947D94E318A0ED1350CFF29ED /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B89ADB0A0D410FD7B8D5B9FE4B608D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967BA41B609EEE6070F272A434591C20 /* SYFlatButton-umbrella.h in Headers */,
+				015DC64512C1BC84D74447B8A3726EBC /* SYFlatButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D839866E685F2617BFFE4537716A917 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695AF63F996F9170B7F029AB666B0DD3 /* Pods-Texture MakerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FC106E0AF7B9A46C70B62CE7F64CF1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76BA6E85CD41952C9E677EDF341F05F /* Pods-Texture MakerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486726587AE5552BA55123309A3D033 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4F06DDF3F2023B3D7FE4C50599D787 /* Pods-Texture Maker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01DC88D154043E2F41A960472178A6E3 /* SYFlatButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03AD2BCD5F4D6DA920E8689BF52B6D9D /* Build configuration list for PBXNativeTarget "SYFlatButton" */;
+			buildPhases = (
+				0B89ADB0A0D410FD7B8D5B9FE4B608D4 /* Headers */,
+				A80693615B72F139A5F8657EB7D16C82 /* Sources */,
+				B1FBFD038F959A7A93CC2A827B1A9D1B /* Frameworks */,
+				9E3D5D0B36643C59496797CCF8B7AD86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYFlatButton;
+			productName = SYFlatButton;
+			productReference = E81BD7D7125458CE58AB7D59A64B877F /* SYFlatButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2645C96770E338FA90A49EDD269E28DD /* Pods-Texture MakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A53FEB61387895587D6E2301B192B1 /* Build configuration list for PBXNativeTarget "Pods-Texture MakerUITests" */;
+			buildPhases = (
+				4FC106E0AF7B9A46C70B62CE7F64CF1E /* Headers */,
+				61960C92128D9E6462D203A91339025D /* Sources */,
+				1C12FD854AAEC5C83E3E9F1AA0686932 /* Frameworks */,
+				0B3A3B099A92AB464421738A50B0BD85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DD0E26CB0A6FBD7FFD7076B9D9DC3DA /* PBXTargetDependency */,
+			);
+			name = "Pods-Texture MakerUITests";
+			productName = "Pods-Texture MakerUITests";
+			productReference = 23EB8728024CC178AC4ADB2652CCC01A /* Pods_Texture_MakerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60F5A75B3FA27AF518F9EF5EE05BE201 /* Pods-Texture Maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8AB7F1C8392F30BD4E80102ECE322F9 /* Build configuration list for PBXNativeTarget "Pods-Texture Maker" */;
+			buildPhases = (
+				C486726587AE5552BA55123309A3D033 /* Headers */,
+				A91A0496C7BB95B0D5EB6E430A9461AF /* Sources */,
+				72D0FBA174279FD6DCD0AF0AC68F732D /* Frameworks */,
+				3994F88EC2F758CC5BA574EB53D2E2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6401223CBA6225883D671CCD1ADD1C2E /* PBXTargetDependency */,
+			);
+			name = "Pods-Texture Maker";
+			productName = "Pods-Texture Maker";
+			productReference = CD98CBA7022E33D8BDFBFF963F757E5B /* Pods_Texture_Maker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E198FE3B9E0B72759B2808850CA02BF9 /* Pods-Texture MakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C715A77F9277806C212C092BCB6764 /* Build configuration list for PBXNativeTarget "Pods-Texture MakerTests" */;
+			buildPhases = (
+				0D839866E685F2617BFFE4537716A917 /* Headers */,
+				65195F534A54D3430F8FFF3925838B4B /* Sources */,
+				8ADA917591AAB7539124CC7CE36E972D /* Frameworks */,
+				AD964590BEADA24BACBE4E36A2BB59F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28AA52B12930ADEB4A58FE3FC5E8EDA /* PBXTargetDependency */,
+			);
+			name = "Pods-Texture MakerTests";
+			productName = "Pods-Texture MakerTests";
+			productReference = 92C03B3B60AD21AD91B89041997035B0 /* Pods_Texture_MakerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B987E4A7BA5F9CEC0909ACF9BB242975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60F5A75B3FA27AF518F9EF5EE05BE201 /* Pods-Texture Maker */,
+				E198FE3B9E0B72759B2808850CA02BF9 /* Pods-Texture MakerTests */,
+				2645C96770E338FA90A49EDD269E28DD /* Pods-Texture MakerUITests */,
+				01DC88D154043E2F41A960472178A6E3 /* SYFlatButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B3A3B099A92AB464421738A50B0BD85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3994F88EC2F758CC5BA574EB53D2E2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3D5D0B36643C59496797CCF8B7AD86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD964590BEADA24BACBE4E36A2BB59F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61960C92128D9E6462D203A91339025D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE199A3B185B90F95FEF9BAE6B6EAF6B /* Pods-Texture MakerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65195F534A54D3430F8FFF3925838B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504B89087A708006F521878EC3F7D70F /* Pods-Texture MakerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80693615B72F139A5F8657EB7D16C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC767F691EBBCAE3115B9C8393BBA90 /* SYFlatButton-dummy.m in Sources */,
+				EEF6250493A9B000EB8D5246B0ED7A46 /* SYFlatButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91A0496C7BB95B0D5EB6E430A9461AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68472AB31AF0C4602C0D1BF72E2A12D1 /* Pods-Texture Maker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6401223CBA6225883D671CCD1ADD1C2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SYFlatButton;
+			target = 01DC88D154043E2F41A960472178A6E3 /* SYFlatButton */;
+			targetProxy = DC676C61C1F3AD16BE4540E9907692D4 /* PBXContainerItemProxy */;
+		};
+		8DD0E26CB0A6FBD7FFD7076B9D9DC3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Texture Maker";
+			target = 60F5A75B3FA27AF518F9EF5EE05BE201 /* Pods-Texture Maker */;
+			targetProxy = E398CC3923E7DCEEF87AA5D23B255E68 /* PBXContainerItemProxy */;
+		};
+		F28AA52B12930ADEB4A58FE3FC5E8EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Texture Maker";
+			target = 60F5A75B3FA27AF518F9EF5EE05BE201 /* Pods-Texture Maker */;
+			targetProxy = 03B59A1B9DED8D1CD7BE902FCCFCA584 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0253CCDEE11BB2E876CF8C6EBDC6E1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		18525DE692A8D552AE35CD1771F4F158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4615F09ED9259715FBEABFCA8E7BDC /* SYFlatButton.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SYFlatButton/SYFlatButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SYFlatButton/SYFlatButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/SYFlatButton/SYFlatButton.modulemap";
+				PRODUCT_MODULE_NAME = SYFlatButton;
+				PRODUCT_NAME = SYFlatButton;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B197780B8EA660E7672C4911F9A301D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F965B4DC6E79DEB00A58F2C5FF87E6E8 /* Pods-Texture MakerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Texture MakerTests/Pods-Texture MakerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Texture MakerTests/Pods-Texture MakerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		601CFC67B8C1BD6B6D868859AC73CCD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122B4374CA649B8AD5B046EED9ADFF6C /* Pods-Texture MakerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Texture MakerUITests/Pods-Texture MakerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Texture MakerUITests/Pods-Texture MakerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68379D9E6D47C0CAEB19B51CAD70DEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B25C9A7D8DF44AE864B08285B842BFF /* Pods-Texture Maker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Texture Maker/Pods-Texture Maker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Texture Maker/Pods-Texture Maker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BBDF9FAF7DDA40B4C82D692A657149F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15598E10EC61C5F4E646D529FC8B138C /* Pods-Texture Maker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Texture Maker/Pods-Texture Maker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Texture Maker/Pods-Texture Maker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DC6BBF7D2A721A4E91A75A28EEB8E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6DE4CB8C4A43556A4C76CB877F9725A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4615F09ED9259715FBEABFCA8E7BDC /* SYFlatButton.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SYFlatButton/SYFlatButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SYFlatButton/SYFlatButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/SYFlatButton/SYFlatButton.modulemap";
+				PRODUCT_MODULE_NAME = SYFlatButton;
+				PRODUCT_NAME = SYFlatButton;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8BABA221D222044A5E0EAF4CED163E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2CBD3664521B9B0834CBC6C8829AAA /* Pods-Texture MakerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Texture MakerTests/Pods-Texture MakerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Texture MakerTests/Pods-Texture MakerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD87EC0FA27BA724950A06AB29FB8617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D2726C024315DD05DC237F76A4461D /* Pods-Texture MakerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Texture MakerUITests/Pods-Texture MakerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Texture MakerUITests/Pods-Texture MakerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03AD2BCD5F4D6DA920E8689BF52B6D9D /* Build configuration list for PBXNativeTarget "SYFlatButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18525DE692A8D552AE35CD1771F4F158 /* Debug */,
+				6DE4CB8C4A43556A4C76CB877F9725A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC6BBF7D2A721A4E91A75A28EEB8E83 /* Debug */,
+				0253CCDEE11BB2E876CF8C6EBDC6E1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C715A77F9277806C212C092BCB6764 /* Build configuration list for PBXNativeTarget "Pods-Texture MakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B197780B8EA660E7672C4911F9A301D /* Debug */,
+				8BABA221D222044A5E0EAF4CED163E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A53FEB61387895587D6E2301B192B1 /* Build configuration list for PBXNativeTarget "Pods-Texture MakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD87EC0FA27BA724950A06AB29FB8617 /* Debug */,
+				601CFC67B8C1BD6B6D868859AC73CCD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8AB7F1C8392F30BD4E80102ECE322F9 /* Build configuration list for PBXNativeTarget "Pods-Texture Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBDF9FAF7DDA40B4C82D692A657149F /* Debug */,
+				68379D9E6D47C0CAEB19B51CAD70DEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

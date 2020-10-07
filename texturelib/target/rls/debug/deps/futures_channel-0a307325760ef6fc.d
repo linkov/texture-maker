@@ -1,0 +1,10 @@
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures_channel-0a307325760ef6fc.rmeta: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/lock.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/mod.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/queue.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/sink_impl.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/oneshot.rs
+
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures_channel-0a307325760ef6fc.d: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/lock.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/mod.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/queue.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/sink_impl.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/oneshot.rs
+
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/lib.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/lock.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/mod.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/queue.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/mpsc/sink_impl.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.6/src/oneshot.rs:

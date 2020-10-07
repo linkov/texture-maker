@@ -1,0 +1,5 @@
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures-662c4d29e8f82305.rmeta: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-0.3.6/src/lib.rs
+
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures-662c4d29e8f82305.d: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-0.3.6/src/lib.rs
+
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-0.3.6/src/lib.rs:

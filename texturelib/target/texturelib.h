@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-char *begin_with_filepath(const char *filepath, int size);
+void begin_with_filepath(const char *filepath, int size, int out_size);
 
 void filepath_free(char *s);
 

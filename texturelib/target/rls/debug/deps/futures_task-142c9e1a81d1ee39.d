@@ -1,0 +1,11 @@
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures_task-142c9e1a81d1ee39.rmeta: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/spawn.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/future_obj.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/noop_waker.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/arc_wake.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/waker.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/waker_ref.rs
+
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures_task-142c9e1a81d1ee39.d: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/spawn.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/future_obj.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/noop_waker.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/arc_wake.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/waker.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/waker_ref.rs
+
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/lib.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/spawn.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/future_obj.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/noop_waker.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/arc_wake.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/waker.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.6/src/waker_ref.rs:

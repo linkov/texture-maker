@@ -1,0 +1,11 @@
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures_core-107d4bbd74e4eea9.rmeta: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/future.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/stream.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/mod.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/poll.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/__internal/mod.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/__internal/atomic_waker.rs
+
+/Users/linkov/Documents/sdwr/texture-maker/texturelib/target/rls/debug/deps/futures_core-107d4bbd74e4eea9.d: /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/lib.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/future.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/stream.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/mod.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/poll.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/__internal/mod.rs /Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/__internal/atomic_waker.rs
+
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/lib.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/future.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/stream.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/mod.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/poll.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/__internal/mod.rs:
+/Users/linkov/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.6/src/task/__internal/atomic_waker.rs:

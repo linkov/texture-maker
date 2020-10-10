@@ -13,6 +13,9 @@ class ViewController: NSViewController {
     var selectedImage: NSImage?
     var selectedImagePath: String?
 
+    @IBOutlet weak var moreDetailsCheckbox: NSButton!
+    @IBOutlet weak var saveButton: SYFlatButton!
+    @IBOutlet weak var isRandomizedCheckbox: NSButton!
     @IBOutlet weak var progressBar: NSProgressIndicator!
     @IBOutlet weak var selectFileButton: NSButton!
     @IBOutlet weak var fastTextureButton: NSButton!
@@ -35,8 +38,14 @@ class ViewController: NSViewController {
         resultImageView.layer?.borderWidth = 4
         resultImageView.layer?.cornerRadius = 4
         
+        self.tileSizeField.focusRingType = .none
+        self.outSizeField.focusRingType = .none
+        
         self.fastTextureButton.isEnabled = false
         self.fastTextureButton.layer?.opacity = 0.4
+        
+        self.saveButton.isEnabled = false
+        self.saveButton.layer?.opacity = 0.4
         
         imageWell.wantsLayer = true
         imageWell.layer?.backgroundColor = NSColor.black.cgColor
@@ -58,6 +67,10 @@ class ViewController: NSViewController {
         
     }
     
+    override func viewDidAppear() {
+        
+
+    }
     
     
     @objc func didReceiveTextureCallback(note: NSNotification)  {
@@ -84,6 +97,11 @@ class ViewController: NSViewController {
             self.progressBar.isHidden = true
             self.fastTextureButton.isEnabled = true
             self.fastTextureButton.layer?.opacity = 1.0
+            
+            
+            self.saveButton.isEnabled = true;
+            self.saveButton.layer?.opacity = 1.0;
+            
         }
 
         
@@ -107,6 +125,7 @@ class ViewController: NSViewController {
         let connector3 = LineView(frame:  self.view.frame, fromView: paramsBox, toView: resultImageView)
         self.view.addSubview(connector3)
 
+        
       
 //        self.view.bringSubviewToFront(imageWell)
 //        self.view.bringSubviewToFront(paramsBox)
@@ -117,14 +136,42 @@ class ViewController: NSViewController {
         self.view.bringSubviewToFront(paramsBox)
         self.view.bringSubviewToFront(imageWell)
         self.view.bringSubviewToFront(selectFileButton)
+        selectFileButton.wantsLayer = true
+        selectFileButton.layer?.opacity = 0.6
     }
     
     
+    func saveImage(image: NSImage){
+        let savePanel = NSSavePanel()
+        savePanel.canCreateDirectories = true
+        savePanel.showsTagField = false
+        savePanel.nameFieldStringValue = "result.jpeg"
+        savePanel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.modalPanelWindow)))
+        savePanel.begin { (result) in
+            if result.rawValue == NSFileHandlingPanelOKButton {
+                guard let url = savePanel.url else { return }
+
+                let data = image.pngData
+                do {
+                    try data?.write(to: url, options: .atomicWrite)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+
     
     
     //MARK: Actions
     
-
+    @IBAction func saveDidClick(_ sender: Any) {
+        
+        if (resultImageView.image != nil) {
+            saveImage(image: resultImageView.image!)
+        }
+    }
+    
     @IBAction func fastDidClick(_ sender: Any) {
         
         
@@ -159,11 +206,13 @@ class ViewController: NSViewController {
     
     func performTextureOp(size: Int, outSize: Int) {
 
+        let isRandom = isRandomizedCheckbox.state == .on;
+        let isDetailed = isRandomizedCheckbox.state == .on;
         
         fastTextureButton.isEnabled = false
         self.fastTextureButton.layer?.opacity = 0.4
         
-        begin_with_filepath(selectedImagePath!, Int32(size), Int32(outSize))
+        begin_with_filepath(selectedImagePath!, Int32(size), Int32(outSize), isRandom, isDetailed)
     
     }
     
@@ -175,7 +224,7 @@ class ViewController: NSViewController {
         openPanel.canChooseDirectories = false
         openPanel.canCreateDirectories = false
         openPanel.canChooseFiles = true
-        openPanel.allowedFileTypes = ["jpg","png","pdf","pct", "bmp", "tiff"]
+        openPanel.allowedFileTypes = ["jpeg","jpg","png","pdf","pct", "bmp", "tiff"]
         let i = openPanel.runModal()
         if(i == NSApplication.ModalResponse.OK){
 
@@ -184,7 +233,7 @@ class ViewController: NSViewController {
             self.imageWell.image = rectIMG
             self.selectedImage = rectIMG
             self.selectedImagePath = str
-            self.view.bringSubviewToFront(imageWell)
+
             self.fastTextureButton.isEnabled = true
             self.fastTextureButton.layer?.opacity = 1.0
 
@@ -213,4 +262,30 @@ extension NSView {
             }, context: &theView)
     }
 
+}
+extension NSImage {
+    var pngData: Data? {
+        guard let tiffRepresentation = tiffRepresentation, let bitmapImage = NSBitmapImageRep(data: tiffRepresentation) else { return nil }
+            let prop: [NSBitmapImageRep.PropertyKey: Any] = [
+                .fallbackBackgroundColor: NSColor.black
+                   ]
+        
+        return bitmapImage.representation(using: .jpeg, properties: prop)
+    }
+    func pngWrite(to url: URL, options: Data.WritingOptions = .atomic) -> Bool {
+        do {
+            try pngData?.write(to: url, options: options)
+            return true
+        } catch {
+            print(error)
+            return false
+        }
+    }
+}
+
+
+extension URL {
+    var isDirectory: Bool {
+       return (try? resourceValues(forKeys: [.isDirectoryKey]))?.isDirectory == true
+    }
 }

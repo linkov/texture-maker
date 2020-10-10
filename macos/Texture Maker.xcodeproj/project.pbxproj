@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -104,7 +104,6 @@
 				3D0EABE34E6CA972636C0041 /* Pods-Texture MakerUITests.debug.xcconfig */,
 				6929007B0E79E0BD90C9F4B3 /* Pods-Texture MakerUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -528,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -583,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -601,6 +600,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Texture Maker/Texture_Maker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 43R88X5B35;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "/Users/linkov/Documents/sdwr/texture-maker/macos/include";
@@ -613,6 +613,7 @@
 					"/Users/linkov/Documents/sdwr/RUST-IOS-TEMPLATE/hello-rust/libs",
 					"$(PROJECT_DIR)/libs",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-Maker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linkov/Documents/sdwr/texture-maker/macos/include/texturelib.h";
@@ -629,6 +630,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Texture Maker/Texture_Maker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 43R88X5B35;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "/Users/linkov/Documents/sdwr/texture-maker/macos/include";
@@ -641,6 +643,7 @@
 					"/Users/linkov/Documents/sdwr/RUST-IOS-TEMPLATE/hello-rust/libs",
 					"$(PROJECT_DIR)/libs",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fvnction.Texture-Maker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linkov/Documents/sdwr/texture-maker/macos/include/texturelib.h";

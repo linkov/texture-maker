@@ -13,13 +13,14 @@ use std::{
     sync::mpsc::{self, Sender},
     thread,
 };
+use rand::Rng;
 
 use texture_synthesis as ts;
 
 
 //MARK: Incoming params
 #[no_mangle]
-pub extern fn begin_with_filepath(filepath: *const c_char, size: c_int, out_size: c_int ) -> () {
+pub extern fn begin_with_filepath(filepath: *const c_char, size: c_int, out_size: c_int, is_random: bool, is_detailed: bool ) -> () {
 
    
     let c_str = unsafe { CStr::from_ptr(filepath) };
@@ -28,7 +29,7 @@ pub extern fn begin_with_filepath(filepath: *const c_char, size: c_int, out_size
         Ok(string) => string,
     };
         
-    begin_transform(recipient.to_string(),size, out_size);
+    begin_transform(recipient.to_string(),size, out_size, is_random, is_detailed);
 
     
 
@@ -112,12 +113,12 @@ impl MyCallback for unsafe extern "C" fn(CFStringRef) {
 
 //MARK: Transform
 
-fn begin_transform(url_string: String, size: c_int, out_size: c_int) -> () {
+fn begin_transform(url_string: String, size: c_int, out_size: c_int, is_random: bool, is_detailed: bool) -> () {
 
 
     task::spawn(async  move  {
 
-       let res = run_transform(url_string.to_string(), size, out_size).await;
+       let res = run_transform(url_string.to_string(), size, out_size, is_random, is_detailed).await;
         if res.is_ok() {
             unsafe {
                 send_to_callback("success".to_owned());
@@ -171,7 +172,21 @@ fn begin_transform(url_string: String, size: c_int, out_size: c_int) -> () {
 
 }
 
-async fn run_transform(url_string: String, size: c_int, out_size: c_int ) -> Result<(), ts::Error> {
+async fn run_transform(url_string: String, size: c_int, out_size: c_int, is_random: bool, is_detailed: bool ) -> Result<(), ts::Error> {
+
+    let mut seed = 214;
+
+    if is_random {
+        let mut rng = rand::thread_rng();
+        seed = rng.gen_range(1, 10000);
+    }
+
+    let mut nearest_neighbors = 50;
+
+    if is_detailed {
+       
+        nearest_neighbors = 100;
+    }
 
     let tile_size: Result<u32, std::num::TryFromIntError> = size.try_into();
     let out_size: Result<u32, std::num::TryFromIntError> = out_size.try_into();
@@ -185,6 +200,8 @@ async fn run_transform(url_string: String, size: c_int, out_size: c_int ) -> Res
         })
         .add_example(&url_string)
         .output_size(ts::Dims::square( out_size.unwrap() ))
+        .seed(seed)
+        .nearest_neighbors(nearest_neighbors)
         .build()?;
 
     //generate an image

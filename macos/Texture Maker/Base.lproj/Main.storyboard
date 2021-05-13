@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -763,7 +763,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HF7-bH-8Zc">
-                                            <rect key="frame" x="13" y="37" width="97" height="18"/>
+                                            <rect key="frame" x="7" y="36" width="101" height="18"/>
                                             <buttonCell key="cell" type="check" title="Randomized" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jYM-GS-q8k">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -803,6 +803,9 @@
                                 <buttonCell key="cell" type="square" title="Generate" bezelStyle="shadowlessSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="3k0-QB-d9R">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="systemSemibold" size="16"/>
+                                    <connections>
+                                        <action selector="generateDidClick:" target="XfG-lQ-9wD" id="wJo-xL-Ge0"/>
+                                    </connections>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundNormalColor">
@@ -821,9 +824,6 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="fastDidClick:" target="XfG-lQ-9wD" id="Z3o-ck-Bsh"/>
-                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D85-9H-CtH">
                                 <rect key="frame" x="120" y="452" width="81" height="19"/>

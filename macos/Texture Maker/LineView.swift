@@ -1,6 +1,5 @@
 //
 //  LineView.swift
-//  ImageDestroy
 //
 //  Created by Alex Linkov on 6/20/20.
 //  Copyright © 2020 SDWR. All rights reserved.

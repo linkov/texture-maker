@@ -8,7 +8,10 @@
 import Cocoa
 import SYFlatButton
 
+
 class ViewController: NSViewController {
+    
+   
     
     var selectedImage: NSImage?
     var selectedImagePath: String?
@@ -26,9 +29,53 @@ class ViewController: NSViewController {
     @IBOutlet weak var paramsBox: NSBox!
     @IBOutlet weak var resultImageView: NSImageView!
     @IBOutlet weak var imageWell: NSImageView!
+    
+    //MARK: Lifecycle
+    
+    deinit {
+        
+        let nc = NotificationCenter.default
+        nc.removeObserver(self, name: Notification.Name.didReceiveTextureCallbackNotification, object: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let nc = NotificationCenter.default
+        nc.addObserver(self, selector: #selector(didReceiveTextureCallback), name: Notification.Name.didReceiveTextureCallbackNotification, object: nil)
+        
 
+        setupUI()
+        registerForRustNotification()
+
+        
+        
+    }
+    
+    override func viewWillAppear() {
+        
+ 
+        
+        let connector1 = LineView(frame:  self.view.frame, fromView: imageWell, toView: paramsBox)
+        self.view.addSubview(connector1)
+
+        let connector3 = LineView(frame:  self.view.frame, fromView: paramsBox, toView: resultImageView)
+        self.view.addSubview(connector3)
+        
+        self.view.displayIfNeeded()
+        
+        self.view.bringSubviewToFront(resultImageView)
+        self.view.bringSubviewToFront(paramsBox)
+        self.view.bringSubviewToFront(imageWell)
+        self.view.bringSubviewToFront(selectFileButton)
+        
+        selectFileButton.wantsLayer = true
+        selectFileButton.layer?.opacity = 0.6
+    }
+    
+    func setupUI() {
+        
         self.imageWell.isEditable = false
         
         resultImageView.wantsLayer = true
@@ -52,24 +99,31 @@ class ViewController: NSViewController {
     
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = .black
-        
-        let nc = NotificationCenter.default
-        nc.addObserver(self, selector: #selector(didReceiveTextureCallback), name: Notification.Name("didReceiveTextureCallbackNotification"), object: nil)
-        
+    }
+    
+
+    //MARK: Rust lib
+    
+    func registerForRustNotification()  {
         
         register_callback { (res) in
             
             let nc = NotificationCenter.default
-            nc.post(name: Notification.Name("didReceiveTextureCallbackNotification"), object: res! as String)
+            nc.post(name: Notification.Name.didReceiveTextureCallbackNotification, object: res! as String)
             
         }
-        
-        
     }
     
-    override func viewDidAppear() {
-        
+    func performTextureOp(size: Int, outSize: Int) {
 
+        let isRandom = isRandomizedCheckbox.state == .on;
+        let isDetailed = isRandomizedCheckbox.state == .on;
+        
+        fastTextureButton.isEnabled = false
+        self.fastTextureButton.layer?.opacity = 0.4
+        
+        begin_with_filepath(selectedImagePath!, Int32(size), Int32(outSize), isRandom, isDetailed)
+    
     }
     
     
@@ -109,61 +163,11 @@ class ViewController: NSViewController {
         
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-    
-    override func viewWillAppear() {
-        
- 
-        
-        let connector1 = LineView(frame:  self.view.frame, fromView: imageWell, toView: paramsBox)
-        self.view.addSubview(connector1)
 
-        let connector3 = LineView(frame:  self.view.frame, fromView: paramsBox, toView: resultImageView)
-        self.view.addSubview(connector3)
 
-        
-      
-//        self.view.bringSubviewToFront(imageWell)
-//        self.view.bringSubviewToFront(paramsBox)
-        
-        
-        self.view.displayIfNeeded()
-        self.view.bringSubviewToFront(resultImageView)
-        self.view.bringSubviewToFront(paramsBox)
-        self.view.bringSubviewToFront(imageWell)
-        self.view.bringSubviewToFront(selectFileButton)
-        selectFileButton.wantsLayer = true
-        selectFileButton.layer?.opacity = 0.6
-    }
-    
-    
-    func saveImage(image: NSImage){
-        let savePanel = NSSavePanel()
-        savePanel.canCreateDirectories = true
-        savePanel.showsTagField = false
-        savePanel.nameFieldStringValue = "result.jpeg"
-        savePanel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.modalPanelWindow)))
-        savePanel.begin { (result) in
-            if result.rawValue == NSFileHandlingPanelOKButton {
-                guard let url = savePanel.url else { return }
-
-                let data = image.pngData
-                do {
-                    try data?.write(to: url, options: .atomicWrite)
-                } catch {
-                    print(error.localizedDescription)
-                }
-            }
-        }
-    }
-
-    
-    
     //MARK: Actions
+
+
     
     @IBAction func saveDidClick(_ sender: Any) {
         
@@ -172,50 +176,36 @@ class ViewController: NSViewController {
         }
     }
     
-    @IBAction func fastDidClick(_ sender: Any) {
-        
-        
-        self.progressBar.isHidden = false
-        self.progressBar.startAnimation(nil)
+    @IBAction func generateDidClick(_ sender: Any) {
         
         if (selectedImage == nil || selectedImagePath == nil) {
             return
         }
         
+        self.progressBar.isHidden = false
+        self.progressBar.startAnimation(nil)
+        
+        
         var size = 250
-        if (tileSizeField.stringValue.count > 0) {
-            size = Int( tileSizeField.stringValue )!
+        if (tileSizeField.stringValue.count > 0 && tileSizeField.intValue != 0) {
+            size = Int(tileSizeField.intValue)
+        } else {
+            tileSizeField.intValue = Int32(size)
         }
         
         var outSize = 512
-        if (outSizeField.stringValue.count > 0) {
-            outSize = Int( outSizeField.stringValue )!
+        if (outSizeField.stringValue.count > 0  && outSizeField.intValue != 0) {
+            outSize = Int(outSizeField.intValue)
+        } else {
+            outSizeField.intValue = Int32(outSize)
         }
         
         performTextureOp(size: size, outSize: outSize)
         
     }
     
-    
-    
-    @IBAction func imageChanged(_ sender: NSImageView) {
-//        if let image = sender.image{
-//            selectedImage = image
-//        }
-    }
-    
-    func performTextureOp(size: Int, outSize: Int) {
 
-        let isRandom = isRandomizedCheckbox.state == .on;
-        let isDetailed = isRandomizedCheckbox.state == .on;
-        
-        fastTextureButton.isEnabled = false
-        self.fastTextureButton.layer?.opacity = 0.4
-        
-        begin_with_filepath(selectedImagePath!, Int32(size), Int32(outSize), isRandom, isDetailed)
-    
-    }
-    
+
     
     @IBAction func chooseInitialImage(_ sender: Any) {
 
@@ -240,52 +230,30 @@ class ViewController: NSViewController {
         }
 
     }
-
-
-}
-
-extension NSView {
-
-    func bringSubviewToFront(_ view: NSView) {
-            var theView = view
-            self.sortSubviews({(viewA,viewB,rawPointer) in
-                let view = rawPointer?.load(as: NSView.self)
-
-                switch view {
-                case viewA:
-                    return ComparisonResult.orderedDescending
-                case viewB:
-                    return ComparisonResult.orderedAscending
-                default:
-                    return ComparisonResult.orderedSame
-                }
-            }, context: &theView)
-    }
-
-}
-extension NSImage {
-    var pngData: Data? {
-        guard let tiffRepresentation = tiffRepresentation, let bitmapImage = NSBitmapImageRep(data: tiffRepresentation) else { return nil }
-            let prop: [NSBitmapImageRep.PropertyKey: Any] = [
-                .fallbackBackgroundColor: NSColor.black
-                   ]
+    
+    
+    func saveImage(image: NSImage) {
         
-        return bitmapImage.representation(using: .jpeg, properties: prop)
-    }
-    func pngWrite(to url: URL, options: Data.WritingOptions = .atomic) -> Bool {
-        do {
-            try pngData?.write(to: url, options: options)
-            return true
-        } catch {
-            print(error)
-            return false
+        let savePanel = NSSavePanel()
+        savePanel.canCreateDirectories = true
+        savePanel.showsTagField = false
+        savePanel.nameFieldStringValue = "result.jpeg"
+        savePanel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.modalPanelWindow)))
+        savePanel.begin { (result) in
+            if result == NSApplication.ModalResponse.OK {
+                guard let url = savePanel.url else { return }
+
+                let data = image.pngData
+                do {
+                    try data?.write(to: url, options: .atomicWrite)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
         }
     }
-}
 
 
-extension URL {
-    var isDirectory: Bool {
-       return (try? resourceValues(forKeys: [.isDirectoryKey]))?.isDirectory == true
-    }
+
 }
+

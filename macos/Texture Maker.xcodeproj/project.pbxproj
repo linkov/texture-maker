@@ -18,6 +18,7 @@
 		F190F25B252DE19E006DB96C /* Texture_MakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F25A252DE19E006DB96C /* Texture_MakerUITests.swift */; };
 		F190F27F252DE69E006DB96C /* libtexturelib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F190F27E252DE69E006DB96C /* libtexturelib.a */; };
 		F190F285252E2253006DB96C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190F284252E2253006DB96C /* LineView.swift */; };
+		F1CDB85E264CF8D9009D327D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDB85D264CF8D9009D327D /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		F190F274252DE3F2006DB96C /* texturelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texturelib.h; sourceTree = "<group>"; };
 		F190F27E252DE69E006DB96C /* libtexturelib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtexturelib.a; sourceTree = "<group>"; };
 		F190F284252E2253006DB96C /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		F1CDB85D264CF8D9009D327D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		F1CDB85F264D0784009D327D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 		F0CE4615577495CB08E4D68B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1CDB85F264D0784009D327D /* Security.framework */,
 				9ACA71D03B8A9C4767BDEC85 /* Pods_Texture_Maker.framework */,
 				2B9E9CD7E6DB73F70FBE41AD /* Pods_Texture_MakerTests.framework */,
 				336D9134E0FAEC9A2EFE63EE /* Pods_Texture_MakerUITests.framework */,
@@ -147,6 +151,7 @@
 				F190F284252E2253006DB96C /* LineView.swift */,
 				F190F23C252DE19C006DB96C /* AppDelegate.swift */,
 				F190F23E252DE19C006DB96C /* ViewController.swift */,
+				F1CDB85D264CF8D9009D327D /* Extentions.swift */,
 				F190F240252DE19E006DB96C /* Assets.xcassets */,
 				F190F242252DE19E006DB96C /* Main.storyboard */,
 				F190F245252DE19E006DB96C /* Info.plist */,
@@ -427,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CDB85E264CF8D9009D327D /* Extentions.swift in Sources */,
 				F190F23F252DE19C006DB96C /* ViewController.swift in Sources */,
 				F190F23D252DE19C006DB96C /* AppDelegate.swift in Sources */,
 				F190F285252E2253006DB96C /* LineView.swift in Sources */,

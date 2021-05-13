@@ -1,0 +1,1 @@
+{"rustc":3349208951852969630,"features":"[\"default\", \"std\"]","target":374006562708233144,"profile":2285152228202085614,"path":6061000920754783848,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"x86_64-apple-darwin/release/.fingerprint/futures-io-4c7487f3c8549a05/dep-lib-futures-io"}}],"rustflags":[],"metadata":6274769968791134284,"config":0,"compile_kind":825990168141834403}
